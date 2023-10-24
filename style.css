@@ -245,15 +245,36 @@ a:hover {
   display: inline-block;
   transform: scale(1.1);
 }
+
 .buy:hover {
   transition: 0.5s all ease-in-out;
   transform: translateY(-15px);
 }
+
 #linkAbout:hover {
   transition: 0.5s all ease-in-out;
   transform: translateY(-5px);
 }
 
+#animal {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: wave 2s infinite;
+}
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
 
 @media screen and (max-width: 1250px) {
   .container {
