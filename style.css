@@ -12,19 +12,26 @@ body {
   width: 100%;
   max-height: 3629px;
   height: 100%;
+  background: #fff;
 }
 
 .container {
+  max-width: 1440px;
+  width: 100%;
   max-height: 943px;
   height: 100%;
   background: #f8f8f8;
   display: flex;
   gap: 25px;
+  margin-bottom: 41px;
 }
 
 .info {
+  height: 100%;
   color: #161515;
   font-weight: 300;
+  justify-content: start;
+  padding: 189px 0 211px 133px;
 }
 
 .title {
@@ -32,39 +39,58 @@ body {
   color: #272727;
   font-size: 250px;
   font-weight: 300;
-  margin: 189px 0px 43px 133px;
+  text-transform: capitalize;
+  margin-bottom: 43px;
   position: relative;
+}
+
+span {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 186%;
+  text-transform: lowercase;
+  position: absolute;
 }
 
 .title_span {
   width: 135px;
   height: 32px;
-  font-size: 24px;
-  line-height: 186%;
-  position: absolute;
   top: -85px;
   left: 0;
 }
 
 .desc {
-  width: 575px;
   font-size: 32px;
+  font-weight: 300;
   line-height: 155%;
-  margin: 0px 57px 61px 135px;
+  text-align: center;
+}
+
+.primary-desc {
+  width: 575px;
 }
 
 .image {
+  background: #f8f8f8;
   flex-shrink: 0;
-  display: flex;
 }
 
-.image img {
+.img-primary {
+  max-width: 648px;
+  width: 100%;
+  height: 100%;
+  padding: 4px 240px 219px 0;
+  /* display: flex; */
+}
+
+.img-primary img {
   width: 408px;
   height: 720px;
-  margin: 4px 0px 219px 0px;
+  /* margin: 4px 0px 219px 0px; */
 }
 
 .btn {
+  margin-top: 61px;
   height: 82px;
   font-size: 32px;
   display: inline-block;
@@ -75,7 +101,6 @@ body {
   background: #161515;
   color: #fff;
   padding: 26px 74px 35px 73px;
-  margin-left: 135px;
   cursor: pointer;
   position: relative;
 }
@@ -88,10 +113,134 @@ body {
   background: #fff;
   box-shadow: 0px 0px 28px 0px rgba(214, 214, 214, 0.25);
   padding: 13px 27px 31px 28px;
+  margin-top: 0;
   position: absolute;
-  left: 278px;
+  left: 100%;
   top: 0;
   cursor: auto;
+}
+
+.models {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_popular {
+  width: 285px;
+  height: 62px;
+
+  color: #000;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 112.5%;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 84px;
+}
+
+.popular-span {
+  width: 171px;
+  height: 41px;
+  top: -41px;
+  left: calc((100% - 171px) / 2);
+}
+
+.img-popular-one {
+  width: 417px;
+  height: 630px;
+  padding: 110px 60px 110px 71px;
+  cursor: pointer;
+}
+
+.popular-one-desc {
+  max-width: 532px;
+  max-height: 194px;
+  margin-top: 111px;
+  margin-bottom: 85px;
+  position: relative;
+  cursor: pointer;
+}
+
+.span_popular {
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  position: absolute;
+}
+
+.one-spn {
+  width: 285px;
+  height: 27px;
+  top: -44px;
+  left: calc((100% - 285px) / 2);
+}
+
+.img-popular-two {
+  width: 500px;
+  height: 630px;
+  padding: 65px 0;
+  cursor: pointer;
+}
+
+.img-popular-two img {
+  width: 100%;
+  height: 500px;
+}
+
+.desc {
+}
+
+img {
+}
+
+.popular-two-desc {
+  max-width: 510px;
+  max-height: 196px;
+  margin-top: 113px;
+  margin-bottom: 59px;
+  position: relative;
+  cursor: pointer;
+}
+
+.two-spn {
+  width: 66px;
+  height: 29px;
+  top: -46px;
+  left: calc((100% - 66px) / 2);
+}
+
+h3 {
+  width: 972px;
+  height: 50px;
+  color: #161515;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 186%;
+  text-transform: capitalize;
+  margin-bottom: 58px;
+}
+
+.about {
+  width: 515px;
+  height: 231px;
+  flex-shrink: 0;
+  color: #161515;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 170%;
+  margin-bottom: 142px;
+}
+
+#linkAbout {
+  color: #bb8b5d;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1250px) {
@@ -105,8 +254,11 @@ body {
     margin: 151px 0px 34px 106px;
   }
 
-  .title_span {
+  .span {
     font-size: 20px;
+  }
+
+  .title_span {
     top: -68px;
   }
 
@@ -164,8 +316,11 @@ body {
     text-align: center;
   }
 
-  .title_span {
+  .span {
     font-size: 15px;
+  }
+
+  .title_span {
     top: -34px;
     left: (100% - 20px) / 2;
   }
