@@ -137,6 +137,7 @@ span {
 .popular-span {
   width: 171px;
   height: 41px;
+  font-weight: 300;
   top: -41px;
   left: calc((100% - 171px) / 2);
 }
