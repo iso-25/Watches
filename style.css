@@ -449,22 +449,14 @@ a:hover {
     width: 100% - 40px;
   }
 
-  /* .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   .img-primary {
     max-width: 480px;
     padding: 10px;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
   }
 
-  .img-primary img {
-  }
-
-  .btn {
+  /* .btn {
     margin-top: 49px;
     height: 67px;
     font-size: 26px;
@@ -554,8 +546,11 @@ a:hover {
     height: 185px;
     font-size: 20px;
     margin-bottom: 114px;
-  }
+  } */
 
+
+
+/* 
   ------------------------------ .title {
     max-width: 536px;
     font-size: 120px;
@@ -581,16 +576,16 @@ a:hover {
     margin: 0px 10px 20px 10px;
   }
 
-  /* .image {
+  .image {
     justify-content: center;
     margin: 10px;
-  } */
+  }
 
-  /* .image img {
+  .image img {
     width: 261px;
     height: 461px;
     margin: 0px;
-  } */
+  }
 
   .btn {
     height: 50px;
@@ -607,5 +602,5 @@ a:hover {
     width: 114px;
     left: 222px;
     cursor: auto;
-  }
+  } */
 }
