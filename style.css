@@ -240,6 +240,21 @@ h3:after {
   font-weight: 500;
 }
 
+a:hover {
+  transition: 0.3s all ease-in-out;
+  display: inline-block;
+  transform: scale(1.1);
+}
+.buy:hover {
+  transition: 0.5s all ease-in-out;
+  transform: translateY(-15px);
+}
+#linkAbout:hover {
+  transition: 0.5s all ease-in-out;
+  transform: translateY(-5px);
+}
+
+
 @media screen and (max-width: 1250px) {
   .container {
     gap: 5px;
@@ -426,7 +441,6 @@ h3:after {
   }
 
   .img-primary img {
-
   }
 
   .btn {
@@ -521,8 +535,7 @@ h3:after {
     margin-bottom: 114px;
   }
 
-  ------------------------------
-  .title {
+  ------------------------------ .title {
     max-width: 536px;
     font-size: 120px;
     flex-basis: content;
